@@ -1,2 +1,2 @@
 # Typecho-Theme-Bopi
-A NewTypecho Theme Bopi
+A New Typecho Theme Bopi
