@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+.bopi-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+}
+
+.bopi-artile {
+    position: absolute;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.bopi-artile::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    -o-filter: blur(20px);
+    filter: blur(20px);
+    z-index: -3;
+    margin: -30px;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bopi-footer {
+    width:100%;
+}
