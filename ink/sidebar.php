@@ -16,12 +16,12 @@
                     </li>
 
                     <li class="mdui-list-item mdui-ripple">
-                        <a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/admin"><i class="mdui-menu-item-icon mdui-icon material-icons">settings</i>控制台</a>
+                        <a href="<?php Helper::options()->siteUrl()?>admin"><i class="mdui-menu-item-icon mdui-icon material-icons">settings</i>控制台</a>
                     </li>
 
                 <?php else: ?>
                     <li class="mdui-list-item mdui-ripple">
-                        <a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/admin/login.php"><i class="mdui-menu-item-icon mdui-icon material-icons">undo</i>登陆</a>
+                        <a href="<?php Helper::options()->siteUrl()?>admin/login.php"><i class="mdui-menu-item-icon mdui-icon material-icons">undo</i>登陆</a>
                     </li>
 
                 <?php endif; ?>
