@@ -16,15 +16,11 @@
 
     <!--CSS-->
     <link href="<?php $this->options->themeUrl('assets/css/style.min.css'); ?>" rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('assets/css/mdui.min.css'); ?>" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.2/css/mdui.min.css">
+    <link rel="stylesheet" href="//unpkg.com/nprogress@0.2.0/nprogress.css">
 
     <!--ICON-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!--JS-->
-    <script src="<?php $this->options->themeUrl('assets/js/mdui.min.js'); ?>"></script>
-    <script src="<?php $this->options->themeUrl('assets/js/jquery.min.js'); ?>"></script>
-    <script src="<?php $this->options->themeUrl('assets/js/jquery.pjax.min.js'); ?>"></script>
+    <link href="https://fonts.loli.net/icon?family=Material+Icons" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
@@ -36,7 +32,7 @@
     <?php echo $this->options->inHead(); ?>
     <!--HTMLInHead_end-->
 </head>
-<body class="mdui-appbar-with-toolbar">
+<body class="mdui-appbar-with-toolbar" id="pjax-container">
 
 <!--[if lt IE 8]>
 <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="https://browsehappy.com">升级你的浏览器</a>'); ?>.</div>
