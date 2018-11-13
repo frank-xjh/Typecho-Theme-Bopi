@@ -13,7 +13,7 @@
 
     <div class="mdui-card mdui-m-y-2" id="<?php $comments->theId(); ?>">
         <div class="mdui-card-header">
-            <div class="mdui-card-header-avatar"><?php $comments->gravatar(); ?></div>
+            <div class="mdui-card-header-avatar"><?php echo $comments->gravatar(); ?></div>
             <div class="mdui-card-header-title"><?php $comments->author(); ?></div>
             <div class="mdui-card-header-subtitle">Time: <?php $comments->dateWord(); ?></div>
         </div>
