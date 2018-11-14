@@ -13,7 +13,16 @@
 
     <div class="mdui-card mdui-m-y-2" id="<?php $comments->theId(); ?>">
         <div class="mdui-card-header">
-            <div class="mdui-card-header-avatar"><?php $comments->gravatar(); ?></div>
+        	<?php
+            	$host = 'https://secure.gravatar.com';
+            	$url = '/avatar/';
+            	$size = '80';
+            	$default = 'mm';
+            	$rating = Helper::options()->commentsAvatarRating;
+            	$hash = md5(strtolower($comments->mail));
+            	$avatar = $host . $url . $hash . '?s=' . $size . '&r=' . $rating . '&d=' . $default;
+        	?>
+            <img class="mdui-card-header-avatar" src="<?php echo $avatar ?>" />
             <div class="mdui-card-header-title"><?php $comments->author(); ?></div>
             <div class="mdui-card-header-subtitle">Time: <?php $comments->dateWord(); ?></div>
         </div>
